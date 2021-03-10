@@ -47,6 +47,21 @@ while distance < 525 and distance1 < 525:
     time.sleep(0.5)
     distance1 += move1
     distance += move
+one.write("Distance traveled: " + str(distance), move=True)
+two.write("Distance traveled: " + str(distance1), move=True)
+
+if distance>distance1:
+    one.right(90)
+    one.forward(20)
+    one.left(90)
+    one.write("winner yeehaw")
+else:
+    two.right(90)
+    two.forward(20)
+    two.left(90)
+    two.write("winner yeehaw")
+
+
 
 
 
