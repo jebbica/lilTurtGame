@@ -39,7 +39,7 @@ ref.forward(800)
 total_length = 525 
 distance = 0
 distance1 = 0
-while distance and distance1 < 525:
+while distance < 525 and distance1 < 525:
     move = random.randint(0,100)
     move1 = random.randint(0,100)
     one.forward(move)
